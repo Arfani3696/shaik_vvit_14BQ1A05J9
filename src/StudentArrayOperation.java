@@ -5,7 +5,7 @@ import java.util.Date;
  * An interface that provide a number of operations for any array of students
  *
  */
-public class StudentArrayOperation extends Student{
+public class StudentArrayOperation {
 
 	/**
 	 * Returns the array of students
@@ -13,21 +13,6 @@ public class StudentArrayOperation extends Student{
 	 * @return the array of students
 	 *
 	 */
-	Student[] getStudents()
-	{   Student std = (Student) o;
-
-	   if(std.id==NULL)
-       {
-           System.out.println("no stdent details");
-       }
-       else
-       {
-             System.out.println("student id"+std.id);
-             System.out.println("student fullName"+std.fullName);
-             System.out.println("student birthDate"+std.birthDate);
-             System.out.println("student avgMark"+std.avgMark);
-       }
-	}
 
 
 	/**
@@ -38,7 +23,7 @@ public class StudentArrayOperation extends Student{
 	 *
 	 * @throws IllegalArgumentException
 	 */
-	void setStudents(Student[] students){}
+	void setStudents(Student[] students);
 
 
 	/**
@@ -47,7 +32,7 @@ public class StudentArrayOperation extends Student{
 	 *
 	 * @param index
 	 */
-	Student getStudent(int index){}
+	Student getStudent(int index);
 
 
 	/**
@@ -64,7 +49,7 @@ public class StudentArrayOperation extends Student{
 	 *
 	 * @throws IllegalArgumentException
 	 */
-	void setStudent(Student student, int index){}
+	void setStudent(Student student, int index);
 
 
 	/**
@@ -81,7 +66,7 @@ public class StudentArrayOperation extends Student{
 	 *
 	 * @throws IllegalArgumentException
 	 */
-	void add(Student student, int index){}
+	void add(Student student, int index);
 
 
 	/**
@@ -93,7 +78,7 @@ public class StudentArrayOperation extends Student{
 	 *
 	 * @throws IllegalArgumentException
 	 */
-	void addFirst(Student student){}
+	void addFirst(Student student);
 
 
 	/**
@@ -105,7 +90,7 @@ public class StudentArrayOperation extends Student{
 	 *
 	 * @throws IllegalArgumentException
 	 */
-	void addLast(Student student){}
+	void addLast(Student student);
 
 
 	/**
@@ -118,7 +103,7 @@ public class StudentArrayOperation extends Student{
 	 *
 	 * @throws IllegalArgumentException
 	 */
-	void remove(int index){}
+	void remove(int index);
 
 
 	/**
@@ -133,7 +118,7 @@ public class StudentArrayOperation extends Student{
 	 *
 	 * @throws IllegalArgumentException
 	 */
-	void remove(Student student){}
+	void remove(Student student);
 
 
 	/**
@@ -146,7 +131,7 @@ public class StudentArrayOperation extends Student{
 	 *
 	 * @throws IllegalArgumentException
 	 */
-	void removeFromIndex(int index){}
+	void removeFromIndex(int index);
 
 
 	/**
@@ -159,7 +144,7 @@ public class StudentArrayOperation extends Student{
 	 *
 	 * @throws IllegalArgumentException
 	 */
-	void removeFromElement(Student student){}
+	void removeFromElement(Student student);
 
 
 	/**
@@ -172,7 +157,7 @@ public class StudentArrayOperation extends Student{
 	 *
 	 * @throws IllegalArgumentException
 	 */
-	void removeToIndex(int index){}
+	void removeToIndex(int index);
 
 
 	/**
@@ -185,14 +170,14 @@ public class StudentArrayOperation extends Student{
 	 *
 	 * @throws IllegalArgumentException
 	 */
-	void removeToElement(Student student){}
+	void removeToElement(Student student);
 
 
 	/**
 	 * Performs Bubble Sort to this array
 	 *
 	 */
-	void bubbleSort(){}
+	void bubbleSort();
 
 
 	/**
@@ -207,7 +192,7 @@ public class StudentArrayOperation extends Student{
 	 *
 	 * @throws IllegalArgumentException
 	 */
-	Student[] getByBirthDate(Date date){}
+	Student[] getByBirthDate(Date date);
 
 
 	/**
@@ -224,7 +209,7 @@ public class StudentArrayOperation extends Student{
 	 *
 	 * @throws IllegalArgumentException
 	 */
-	Student[] getBetweenBirthDates(Date firstDate, Date lastDate){}
+	Student[] getBetweenBirthDates(Date firstDate, Date lastDate);
 
 
 	/**
@@ -242,7 +227,7 @@ public class StudentArrayOperation extends Student{
 	 *
 	 * @throws IllegalArgumentException
 	 */
-	Student[] getNearBirthDate(Date date, int days){}
+	Student[] getNearBirthDate(Date date, int days);
 
 
 	/**
@@ -257,7 +242,7 @@ public class StudentArrayOperation extends Student{
 	 *
 	 * @throws IllegalArgumentException
 	 */
-	int getCurrentAgeByDate(int indexOfStudent){}
+	int getCurrentAgeByDate(int indexOfStudent);
 
 
 	/**
@@ -267,7 +252,7 @@ public class StudentArrayOperation extends Student{
 	 *
 	 * @return the array of students of the specified age
 	 */
-	Student[] getStudentsByAge(int age){}
+	Student[] getStudentsByAge(int age);
 
 
 	/**
@@ -277,7 +262,7 @@ public class StudentArrayOperation extends Student{
 	 * @return the array of students who has maximum average mark
 	 *
 	 */
-	Student[] getStudentsWithMaxAvgMark(){}
+	Student[] getStudentsWithMaxAvgMark();
 
 
 	/**
@@ -288,6 +273,6 @@ public class StudentArrayOperation extends Student{
 	 *
 	 * @throws IllegalArgumentException
 	 */
-	Student getNextStudent(Student student){}
+	Student getNextStudent(Student student);
 
 }
